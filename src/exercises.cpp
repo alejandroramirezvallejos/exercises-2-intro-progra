@@ -79,9 +79,13 @@ void exercise_9(string s) {
   // TODO: YOUR CODE HERE
 }
 
-int exercise_10(int a, int b) {
-  // TODO: YOUR CODE HERE
-  return 0;
+int exercise_10(int n, int n2) {
+   while (n2 != 0) {
+        int x = n2;
+        n2 = n%n2;
+        n = x;
+    }
+  return n;
 }
 
 void exercise_11() {
