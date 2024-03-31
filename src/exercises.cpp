@@ -17,7 +17,25 @@ void exercise_3(string s1) {
 }
 
 void exercise_4(int n) {
-  // TODO: YOUR CODE HERE
+  int factorial = 1;
+    cin>>n;
+    if (n==0){
+      cout<<"1"<<endl;
+    }
+    else if (n>=1){
+        if (n<17){
+            for(int i=1; i<=n; i++){
+                factorial=factorial*i;
+            }
+            cout<<factorial<<endl;
+        }
+        else{
+            cout<<"El numero es muy grande. Intentelo de nuevo"<<endl;
+        }
+    }
+    else{
+        cout<<"El numero es negativo. Intentelo de nuevo"<<endl;
+    }
 }
 
 void exercise_5(int n, int k) {
