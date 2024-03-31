@@ -43,12 +43,19 @@ void exercise_5(int n, int k) {
 }
 
 int exercise_6(int n) {
-  int suma=0;
-      while(n!=0){
-        suma = suma + n%10;
-        n = n/10;
-      } 
-  return suma;
+    int suma=0;
+    int r;
+    if (n>=0){
+        while(n!=0){
+          suma = suma + n%10;
+          n = n/10;
+        }
+      r = suma;
+    }
+    else{
+      r = 0;
+    }
+  return r;
 }
 
 void exercise_7(int n) {
