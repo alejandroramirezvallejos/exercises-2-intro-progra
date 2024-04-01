@@ -97,8 +97,11 @@ void exercise_12() {
 }
 
 long exercise_13(int n, int k) {
-  // TODO: YOUR CODE HERE
-  return 0;
+    int suma= 0;
+    for (int i=1; i<=n; i++){
+        suma = suma + pow(i, k);
+    }
+  return suma;
 }
 
 string exercise_14(int n) {
