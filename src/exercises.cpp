@@ -110,15 +110,21 @@ string exercise_14(int n) {
 }
 
 void exercise_15(int decimal) {
+
 }
 
 void exercise_16(int divident, int divider) {
   int i=0;
-  while (divident >= divider){
-    divident = divident - divider;
-    i++;
+  if (divider==0){
+    cout<<"";
   }
-  cout<<i<<" "<<divident<<endl;
+  else{
+    while (divident >= divider){
+      divident = divident - divider;
+      i++;
+    }
+    cout<<i<<" "<<divident<<endl;
+  }
 }
 
 void exercise_17(int n) {
