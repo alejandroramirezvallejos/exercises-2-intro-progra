@@ -110,23 +110,7 @@ string exercise_14(int n) {
 }
 
 void exercise_15(int decimal) {
-    int i;
-    string x, y, z, a;
-    if (decimal==0){
-        cout<<"0"<<endl;
-    }
-    else{
-        while (decimal>0){
-            i = decimal%2;
-            decimal = decimal/2;
-            x = to_string(i);
-            y = y+x;    
-        }
-        for (int z = y.size() - 1; z>=0; z--){
-            a = a + y[z];
-        }
-        cout<<a<<endl;
-    }  
+    
 }
 
 void exercise_16(int divident, int divider) {
