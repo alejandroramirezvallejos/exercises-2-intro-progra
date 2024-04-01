@@ -93,7 +93,7 @@ void exercise_11() {
 }
 
 void exercise_12() {
-  // TODO: YOUR CODE HERE
+  
 }
 
 long exercise_13(int n, int k) {
