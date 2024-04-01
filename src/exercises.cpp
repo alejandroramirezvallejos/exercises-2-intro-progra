@@ -105,8 +105,18 @@ long exercise_13(int n, int k) {
 }
 
 string exercise_14(int n) {
-  
-  return "";
+  string x, i, z, r;
+  x = to_string(n);
+    for (int i = x.size() - 1; i>=0; i--){
+        z = z + x[i];
+    }
+    if (x == z){
+        r = "Es palindrome";
+    }
+    else{
+        r = "No es palindrome";
+    }
+  return r;
 }
 
 void exercise_15(int decimal) {
