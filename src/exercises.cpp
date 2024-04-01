@@ -105,12 +105,11 @@ long exercise_13(int n, int k) {
 }
 
 string exercise_14(int n) {
-  // TODO: YOUR CODE HERE
+  
   return "";
 }
 
 void exercise_15(int decimal) {
-  // TODO: YOUR CODE HERE
 }
 
 void exercise_16(int divident, int divider) {
