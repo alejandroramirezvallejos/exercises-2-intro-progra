@@ -114,7 +114,12 @@ void exercise_15(int decimal) {
 }
 
 void exercise_16(int divident, int divider) {
-  // TODO: YOUR CODE HERE
+  int i=0;
+  while (divident >= divider){
+    divident = divident - divider;
+    i++;
+  }
+  cout<<i<<" "<<divident<<endl;
 }
 
 void exercise_17(int n) {
