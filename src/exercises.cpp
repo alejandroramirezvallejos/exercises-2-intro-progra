@@ -72,7 +72,27 @@ void exercise_7(int n) {
 }
 
 void exercise_8(string s) {
-  // TODO: YOUR CODE HERE
+  int i;
+  string c, d, d2;
+  for (int i=0; i<s.size(); i++){
+      c = s[i];
+      if (c==" "){
+          d = d;
+      }
+      else{
+      d = d + c;
+      }
+  }
+  for (int i=d.size()-1; i<d.size(); i--){
+      c = d[i];
+      d2 = d2 + c;
+  }
+  if (d==d2){
+      cout<<"YES"<<endl;
+  }
+  else{
+      cout<<"NO"<<endl;
+  }
 }
 
 void exercise_9(string s) {
