@@ -96,7 +96,36 @@ void exercise_8(string s) {
 }
 
 void exercise_9(string s) {
-  // TODO: YOUR CODE HERE
+  int i, u;
+  string c, d;
+  for (int i=0; i<s.size(); i++){
+      c = s[i];
+      if (c=="f" || c=="F"){
+          d = d + c;
+      }
+      else{
+          d = d;
+      }
+  }
+  if (d == "f" || d == "F"){
+      cout<<"-1"<<endl;
+  }
+  else if (d == ""){
+      cout<<"-2"<<endl;
+  }
+  else {
+    int u = 0;
+    for (int i = 0; i < s.size(); i++){
+        c = s[i];
+        if (c == "f" || c == "F"){
+            u++; 
+            if (u == 2){ 
+                cout<<i<<endl;
+                break; 
+            }
+        }
+    }
+  }
 }
 
 int exercise_10(int n, int n2) {
