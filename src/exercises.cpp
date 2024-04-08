@@ -14,18 +14,21 @@ void exercise_2(string s1) {
 
 void exercise_3(string s) {
   int i;
-  string c;
+  string c, d, u;
     if (s.size()<=10){
       for (int i=0; i<s.size(); i++){
           c = s[i];
           if (c=="1"){
-              cout<<"Om-nom-nom :P"<<endl;
+              u= "Om-nom-nom :P\n";
+              d = d + u;
           }
           else if (c=="0"){
-              cout<<"No cake :("<<endl;
+              u = "No cake :(\n";
+              d = d + u;
               break;
           }
       }
+      cout<<d;
     }
 }
 
