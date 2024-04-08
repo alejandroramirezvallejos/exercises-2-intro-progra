@@ -12,8 +12,21 @@ void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
 }
 
-void exercise_3(string s1) {
-  // TODO: YOUR CODE HERE
+void exercise_3(string s) {
+  int i;
+  string c;
+    if (s.size()<=10){
+      for (int i=0; i<s.size(); i++){
+          c = s[i];
+          if (c=="1"){
+              cout<<"Om-nom-nom :P"<<endl;
+          }
+          else if (c=="0"){
+              cout<<"No cake :("<<endl;
+              break;
+          }
+      }
+    }
 }
 
 void exercise_4(int n) {
