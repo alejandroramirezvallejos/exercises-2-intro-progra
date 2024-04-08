@@ -13,23 +13,34 @@ void exercise_2(string s1) {
 }
 
 void exercise_3(string s) {
-  int i;
-  string c, d, u;
-    if (s.size()<=10){
-      for (int i=0; i<s.size(); i++){
-          c = s[i];
-          if (c=="1"){
-              u= "Om-nom-nom :P\n";
-              d = d + u;
-          }
-          else if (c=="0"){
-              u = "No cake :(\n";
-              d = d + u;
+  int i, w=0;
+  string c, c2, d, d2, u;
+  for (int i=0; i<s.size(); i++){
+      c2 = s[i];
+      if (c==" "){
+          d2 = d2;
+      }
+      else{
+          d2 = d2 + c2;
+      }
+  }
+  for (int i=0; i<d2.size(); i++){
+      c = d2[i];
+      if (c=="1"){
+          u= "Om-nom-nom :P\n";
+          d = d + u;
+          w++;
+          if (w==10){
               break;
           }
       }
-      cout<<d;
-    }
+      else if (c=="0"){
+          u = "No cake :(\n";
+          d = d + u;
+          break;
+      }
+  }
+  cout<<d;
 }
 
 void exercise_4(int n) {
