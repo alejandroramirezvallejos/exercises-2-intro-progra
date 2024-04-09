@@ -335,11 +335,9 @@ void exercise_18_19(int debut, int fin) {
                     s = s-1;
                 }
             }
-            c = to_string(n) + " -> " + to_string(k) + "\n";
+            c = to_string(n) + "->" + to_string(k) + "\n";
             d = d + c;
         }
-        a = d.size()-1;
-        d.resize(a);
         cout<<d<<endl;
     }    
 }
