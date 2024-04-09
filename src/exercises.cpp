@@ -311,5 +311,22 @@ void exercise_17(int n) {
 }
 
 void exercise_18_19(int debut, int fin) {
-  // TODO: YOUR CODE HERE
+    int n, k, s;
+    for (int n=debut; n<=fin; n++){
+        int k = 0;
+        int s = n;
+        while (s>0){
+            k++;
+            if (s%3 == 0){
+                s = s + 4;
+            }
+            else if (s%4 == 0){
+                s = s/2;
+            }
+            else{
+                s = s-1;
+            }
+        }
+        cout<<n<<" -> "<<k<<" ";
+    }
 }
