@@ -230,7 +230,31 @@ void exercise_16(int divident, int divider) {
 }
 
 void exercise_17(int n) {
-  // TODO: YOUR CODE HERE
+  int p = 2, i, u;
+  string d;
+    if (n<=0){
+        cout<<"";
+    }
+    else{
+        while (true){
+            u = 0; 
+            for (i = 2; i <= sqrt(p); i++){
+                if (p%i == 0){
+                    u++; 
+                    break;
+                }
+            }
+            if (u == 0){ 
+                d = d + to_string(p) + " ";
+                n--;
+                if (n == 0){
+                    break;
+                }
+            }
+            p++;
+        }
+        cout<<d;
+    }
 }
 
 void exercise_18_19(int debut, int fin) {
