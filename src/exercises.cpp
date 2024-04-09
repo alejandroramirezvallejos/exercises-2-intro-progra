@@ -311,7 +311,8 @@ void exercise_17(int n) {
 }
 
 void exercise_18_19(int debut, int fin) {
-    int n, k, s;
+    int n, k, s, a;
+    string d, c;
     for (int n=debut; n<=fin; n++){
         int k = 0;
         int s = n;
@@ -327,6 +328,10 @@ void exercise_18_19(int debut, int fin) {
                 s = s-1;
             }
         }
-        cout<<n<<" -> "<<k<<" ";
+        c = to_string(n) + " -> " + to_string(k) + " ";
+        d = d + c;
     }
+    a = d.size()-1;
+    d.resize(a);
+    cout<<d<<endl;
 }
