@@ -313,13 +313,13 @@ void exercise_17(int n) {
 void exercise_18_19(int debut, int fin) {
     int n, k, s, a;
     string d, c;
-    if (debut<0){
+    if (debut<=0){
         cout<<"El numero debe de ser positivo y mayor a zero"<<endl;
     }
     if (fin<debut){
         cout<<"El numero de fin no debe de ser menor al inicial"<<endl;
     }
-    if (debut>=0 && fin>=debut){
+    if (debut>0 && fin>=debut){
         for (int n=debut; n<=fin; n++){
             int k = 0;
             int s = n;
@@ -338,6 +338,6 @@ void exercise_18_19(int debut, int fin) {
             c = to_string(n) + "->" + to_string(k) + "\n";
             d = d + c;
         }
-        cout<<d<<endl;
+        cout<<d;
     }    
 }
