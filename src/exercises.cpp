@@ -32,7 +32,31 @@ void exercise_1(string s1) {
 }
 
 void exercise_2(string s1) {
-  // TODO: YOUR CODE HERE
+  int i, u=0, n;
+    string c, d, d2="[";
+    n = s1.size();
+    for (int i = 0; i<s1.size(); i++){
+        c = s1[i];
+        if (!(c== " " || c=="\n")){
+            d = d + c;
+        }
+    }
+    if (d==s1){
+        cout<<"["+d+"]"<<endl;
+    }
+    else{
+       for (int i = 0; i<s1.size(); i++){
+           c = s1[i];
+           u++;
+           if (!(c==" " || c=="\n")){
+               d2 = d2 + c;
+           }
+           else if (c==" "){
+               d2 = d2 + "]\n" + "[";
+           }
+        }
+        cout<<d2 + "]\n";
+    }
 }
 
 void exercise_3(string s) {
