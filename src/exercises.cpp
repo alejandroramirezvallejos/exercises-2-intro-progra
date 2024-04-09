@@ -5,15 +5,30 @@
 using namespace std;
 
 void exercise_1(string s1) {
-  int i, u=0;
-    string c;
-    for (int i = 0; i<=s1.size(); i++){
-       c = s1[i];
-       u++;
-       if (c==" " || c=="\n"){
-           cout<<u-1<<endl;
-       }
-   }
+    int i, u=0, n;
+    string c, d;
+    n = s1.size();
+    for (int i = 0; i<s1.size(); i++){
+        c = s1[i];
+        if (!(c== " " || c=="\n")){
+            d = d + c;
+        }
+    }
+    if (d==s1){
+        cout<<d.size()<<endl;
+    }
+    else{
+       for (int i = 0; i<s1.size(); i++){
+           c = s1[i];
+           u++;
+           if (c==" " || c=="\n"){
+               cout<<u-1<<endl;
+           }
+           else if (u==n){
+               cout<<u<<endl;
+           }
+        }
+    }
 }
 
 void exercise_2(string s1) {
