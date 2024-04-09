@@ -5,7 +5,15 @@
 using namespace std;
 
 void exercise_1(string s1) {
-  // TODO: YOUR CODE HERE
+  int i, u=0;
+    string c;
+    for (int i = 0; i<=s1.size(); i++){
+       c = s1[i];
+       u++;
+       if (c==" " || c=="\n"){
+           cout<<u-1<<endl;
+       }
+   }
 }
 
 void exercise_2(string s1) {
