@@ -119,7 +119,273 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
+    string d, s, r;
+    if (n == 1) {
+        d = " 1" + string("  ") + "2" + string("  ") + "3" + string("  ") + "4" + string("  ") + "5" + string("  ") + "6" + string("  ") + "7" + "\n";
+        for (int i = 8; i<=k; i++){
+            if (i==k){
+                s = s + to_string(i) + " " + "\n";
+                break;
+            }
+            else if ((n+i-1)%7==0){
+                s = s + to_string(i) + "\n"; 
+            }
+            else if (i>9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                     s = s + to_string(i) + string(" "); 
+                }
+            }
+            else if (i<9){
+                if ((n+i-2)%7==0){
+                    s = " " + s + to_string(i) + string("  ");
+                }
+                else{
+                    s = s + to_string(i) + string("  "); 
+                }
+            }
+            else if (i==9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                    s = s + to_string(i) + string(" "); 
+                }
+            }
+        }
+        r = d + s;
+        cout<<r;
+    }
+    else if (n == 2) {
+        d = " " + string("  ") + " 1" + string("  ") + "2" + string("  ") + "3" + string("  ") + "4" + string("  ") + "5" + string("  ") + "6" + "\n";
+        for (int i = 7; i<=k; i++){
+            if (i==k){
+                s = s + to_string(i) + " " + "\n";
+                break;
+            }
+            else if ((n+i-1)%7==0){
+                s = s + to_string(i) + "\n"; 
+            }
+            else if (i>9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                     s = s + to_string(i) + string(" "); 
+                }
+            }
+            else if (i<9){
+                if ((n+i-2)%7==0){
+                    s = " " + s + to_string(i) + string("  ");
+                }
+                else{
+                    s = s + to_string(i) + string("  "); 
+                }
+            }
+            else if (i==9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                    s = s + to_string(i) + string(" "); 
+                }
+            }
+        }
+        r = d + s;
+        cout<<r;
+    }
+    else if (n == 3) {
+        d = " " + string("  ") + " " + string("  ") + " 1" + string("  ") + "2" + string("  ") + "3" + string("  ") + "4" + string("  ") + "5" + "\n";
+        for (int i = 6; i<=k; i++){
+            if (i==k){
+                s = s + to_string(i) + " " + "\n";
+                break;
+            }
+            else if ((n+i-1)%7==0){
+                s = s + to_string(i) + "\n"; 
+            }
+            else if (i>9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                     s = s + to_string(i) + string(" "); 
+                }
+            }
+            else if (i<9){
+                if ((n+i-2)%7==0){
+                    s = " " + s + to_string(i) + string("  ");
+                }
+                else{
+                    s = s + to_string(i) + string("  "); 
+                }
+            }
+            else if (i==9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                    s = s + to_string(i) + string(" "); 
+                }
+            }
+        }
+        r = d + s;
+        cout<<r;
+    }
+    else if (n == 4) {
+        d = " " + string("  ") + " " + string("  ") + " " + string("  ") + " 1" + string("  ") + "2" + string("  ") + "3" + string("  ") + "4" + "\n";
+        for (int i = 5; i<=k; i++){
+            if (i==k){
+                s = s + to_string(i) + " " + "\n";
+                break;
+            }
+            else if ((n+i-1)%7==0){
+                s = s + to_string(i) + "\n"; 
+            }
+            else if (i>9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                     s = s + to_string(i) + string(" "); 
+                }
+            }
+            else if (i<9){
+                if ((n+i-2)%7==0){
+                    s = " " + s + to_string(i) + string("  ");
+                }
+                else{
+                    s = s + to_string(i) + string("  "); 
+                }
+            }
+            else if (i==9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                    s = s + to_string(i) + string(" "); 
+                }
+            }
+        }
+        r = d + s;
+        cout<<r;
+    }
+    else if (n == 5) {
+        d = " " + string("  ") + " " + string("  ") + " " + string("  ") + " " + string("  ") + " 1" + string("  ") + "2" + string("  ") + "3" + "\n";
+        for (int i = 4; i<=k; i++){
+            if (i==k){
+                s = s + to_string(i) + " " + "\n";
+                break;
+            }
+            else if ((n+i-1)%7==0){
+                s = s + to_string(i) + "\n"; 
+            }
+            else if (i>9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                     s = s + to_string(i) + string(" "); 
+                }
+            }
+            else if (i<9){
+                if ((n+i-2)%7==0){
+                    s = " " + s + to_string(i) + string("  ");
+                }
+                else{
+                    s = s + to_string(i) + string("  "); 
+                }
+            }
+            else if (i==9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                    s = s + to_string(i) + string(" "); 
+                }
+            }
+        }
+        r = d + s;
+        cout<<r;
+    }
+    else if (n == 6) {
+        d = " " + string("  ") + " " + string("  ") + " " + string("  ") + " " + string("  ") + " " + string("  ") + " 1" + string("  ") + "2" + "\n";
+        for (int i = 3; i<=k; i++){
+            if (i==k){
+                s = s + to_string(i) + " " + "\n";
+                break;
+            }
+            else if ((n+i-1)%7==0){
+                s = s + to_string(i) + "\n"; 
+            }
+            else if (i>9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                     s = s + to_string(i) + string(" "); 
+                }
+            }
+            else if (i<9){
+                if ((n+i-2)%7==0){
+                    s = " " + s + to_string(i) + string("  ");
+                }
+                else{
+                    s = s + to_string(i) + string("  "); 
+                }
+            }
+            else if (i==9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                    s = s + to_string(i) + string(" "); 
+                }
+            }
+        }
+        r = d + s;
+        cout<<r;
+    }
+    else if (n == 7) {
+        d = " " + string("  ") + " " + string("  ") + " " + string("  ") + " " + string("  ") + " " + string("  ") + " " + string("  ") + " 1" + "\n";
+        for (int i = 2; i<=k; i++){
+            if (i==k){
+                s = s + to_string(i) + " " + "\n";
+                break;
+            }
+            else if ((n+i-1)%7==0){
+                s = s + to_string(i) + "\n"; 
+            }
+            else if (i>9){
+                if ((n+i-2)%7==0){
+                    s = s + to_string(i) + string(" ");
+                }
+                else{
+                     s = s + to_string(i) + string(" "); 
+                }
+            }
+            else if (i<9){
+                if ((n+i-2)%7==0){
+                    s = " " + s + to_string(i) + string("  ");
+                }
+                else{
+                    s = s + to_string(i) + string("  "); 
+                }
+            }
+            else if (i==9){
+                if ((n+i-2)%7==0){
+                    s = s + " " + to_string(i) + string(" ");
+                }
+                else{
+                    s = s + to_string(i) + string(" "); 
+                }
+            }
+        }
+        r = d + s;
+        cout<<r;
+    }
 }
 
 int exercise_6(int n) {
