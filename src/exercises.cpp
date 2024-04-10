@@ -495,7 +495,14 @@ void exercise_11() {
 }
 
 void exercise_12() {
-
+    int i, c=2;
+    double k = 1;
+    cout<<"U1 = 1 V1 = 1\n";
+    for (int i = 1; i<10; i++){
+        k = k/(i+1);
+        cout<<"U"<<c<<" = "<<k<<" V"<<c<<" = "<<"1"<<endl;
+        c++;
+    }
 }
 
 long exercise_13(int n, int k) {
