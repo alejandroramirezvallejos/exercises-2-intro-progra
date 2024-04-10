@@ -119,7 +119,7 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-string d, s, r;
+    string d, s, r;
     if (n == 1) {
         d = " 1" + string("  ") + "2" + string("  ") + "3" + string("  ") + "4" + string("  ") + "5" + string("  ") + "6" + string("  ") + "7" + "\n";
         for (int i = 8; i<=k; i++){
@@ -484,7 +484,14 @@ int exercise_10(int n, int n2) {
 }
 
 void exercise_11() {
-  // TODO: YOUR CODE HERE
+    int i, c=2;
+    double k = 1;
+    cout<<"U0 = 1\nU1 = 1\n";
+    for (int i = 1; i<10; i++){
+        k = k/(i+1);
+        cout<<"U"<<c<<" = "<<k<<endl;
+        c++;
+    }
 }
 
 void exercise_12() {
