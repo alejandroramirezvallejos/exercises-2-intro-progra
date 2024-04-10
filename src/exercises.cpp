@@ -119,7 +119,7 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    string d, s, r;
+string d, s, r;
     if (n == 1) {
         d = " 1" + string("  ") + "2" + string("  ") + "3" + string("  ") + "4" + string("  ") + "5" + string("  ") + "6" + string("  ") + "7" + "\n";
         for (int i = 8; i<=k; i++){
